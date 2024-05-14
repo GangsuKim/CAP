@@ -2,7 +2,7 @@ import torch.nn as nn
 
 
 class CAPModel(nn.Module):
-    def __init__(self, vocab_size: int, embedding_dim: int, hidden_dim: int, output_dim: int, num_layers: int, bidirectional: bool = True):
+    def __init__(self, vocab_size: int = 71, embedding_dim: int = 300, hidden_dim: int = 500, output_dim: int = 5, num_layers: int = 6, bidirectional: bool = True):
         super(CAPModel, self).__init__()
         self.vocab_size_ = vocab_size
         self.embedding_dim_ = embedding_dim

@@ -9,7 +9,7 @@ context-aware prior (CAP) Network aims to improving optical character recognitio
 **\*Requires adapting CAP network right in to OCR/STR libries to update priors of each characters.**
 
 ## Results
-<h3>CAP-BiLSTM Model trained with FINE data</h3>  
+<h3>CAP-BiLSTM Model trained on generated data</h3>  
 
 OCR Libries | Normal | HASH | IPv4 | IPv6 | MAC 
 ---- | ---- | ---- | ---- | ---- | ----
@@ -29,7 +29,7 @@ OCR Libries | Normal | HASH | IPv4 | IPv6 | MAC
 
 The OCR models marked with an **asterisk\*** were tested using models implemented using the [MMOCR library](https://github.com/open-mmlab/mmocr).
 
-<h3>CAP-BERT Model trained with FINE data</h3>  
+<h3>CAP-BERT Model trained with on generated data</h3>  
 
 OCR Libries | Normal | HASH | IPv4 | IPv6 | MAC 
 ---- | ---- | ---- | ---- | ---- | ----
