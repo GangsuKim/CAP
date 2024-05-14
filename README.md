@@ -1,9 +1,12 @@
 # CAP
-CAP (Context-Aware Prior) is ~~~
+> Official repository of "Enhancing Optical Character Recognition Performance in the Cybersecurity Domain for Indicator of Compromise Analysis"  
+
+context-aware prior (CAP) Network aims to improving optical character recognition (OCR) or scene text recognition (STR) performance in cyber-security doimin images such as thread reports. We deomnstrate our proposed method to improve recognition performance on normal texts(nantural texts), hexadecial encryption texts, IPv4, IPv6 addresses, and MAC address texts in image.
 
 ## Method
-<img src="./CAP.png">  
+<img src="./CAP.png">
 
+**\*Requires adapting CAP network right in to OCR/STR libries to update priors of each characters.**
 
 ## Results
 <h3>CAP-BiLSTM Model trained with FINE data</h3>  
