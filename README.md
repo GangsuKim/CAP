@@ -8,6 +8,16 @@ context-aware prior (CAP) Network aims to improving optical character recognitio
 
 **\*Requires adapting CAP network right in to OCR/STR libries to update priors of each characters.**
 
+## Installation
+### Dependency
+Requires <code>Python >= 3.8</code> and <code>PyTorch >= 1.12</code>. The following commands are tested on a Windows 10 with CUDA driver version <code>552.22</code> and CUDA version <code>11.3</code>.  
+
+```
+conda create -n cap python==3.8
+conda activate cap
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+```
+
 ## Results
 <h3>CAP-BiLSTM Model trained on generated data</h3>  
 
