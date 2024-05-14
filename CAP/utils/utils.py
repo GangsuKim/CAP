@@ -1,6 +1,7 @@
 from typing import List
 import torch
 import numpy as np
+import random, os
 
 
 class WordToTensor2D:
@@ -93,6 +94,15 @@ class WordToTensor1D:
 
         return torch.tensor(indices, dtype=torch.long, device=self.device)
 
+
+def seed_everything(seed):
+    random.seed(seed)
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = True
 
 vocabs = {
     ' ': 0, '0': 1, '1': 2, '2': 3, '3': 4, '4': 5, '5': 6, '6': 7, '7': 8, '8': 9, '9': 10, '!': 11, '"': 12,
