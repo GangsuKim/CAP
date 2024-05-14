@@ -7,7 +7,15 @@ from typing import List
 import os
 
 
-def load_normal_word(data_count, min_length, max_length, word_path: str = '../data/normal') -> List[str]:
+def load_normal_word(data_count: int, min_length: int, max_length: int, word_path: str = '../data/normal') -> List[str]:
+    """
+    Load NORMAL (natural word) data from word collections
+    :param data_count: Count of data
+    :param min_length: Minimum length of texts
+    :param max_length: Minimum length of texts
+    :param word_path: Path of word collection
+    :return:
+    """
     texts = None
 
     for i in range(min_length, max_length + 1):
@@ -24,7 +32,16 @@ def load_normal_word(data_count, min_length, max_length, word_path: str = '../da
     return texts[:data_count]
 
 
-def create_hash_text(texts: List[str], enc_type: str = None, max_length: int = -1):
+def create_hash_text(texts: List[str], enc_type: str = None, max_length: int = -1) -> List[str]:
+    """
+    Create hexadecimal dataset using NORMAL data
+    :param texts: NORMAL words
+    :param enc_type: Type of encryption method. If not, will be random generate.
+    :param max_length: Max length of each text
+    :return: List of hexadecimal words
+
+    - Type of Encrypt : 'md5', 'sha1', 'sha224', 'sha256', 'sha384', 'sha512', 'sha3_224', 'sha3_256', 'sha3_384', 'sha3_512'
+    """
     if len(texts) == 0:
         raise Exception('Origin words must more than 0')
 
@@ -40,6 +57,7 @@ def create_hash_text(texts: List[str], enc_type: str = None, max_length: int = -
 
         texts_.append(enc_text)
     return texts_
+
 
 
 def get_enc(enc_text: str, enc_type: str = None):
@@ -65,7 +83,7 @@ def get_enc(enc_text: str, enc_type: str = None):
     return password_hash.hexdigest()
 
 
-def create_ip_text(data_count, ip_type: str = None, verbose: bool = True, **kwargs) -> List[str]:
+def create_ip_text(data_count: int, ip_type: str = None, verbose: bool = True, **kwargs) -> List[str]:
     ip_data = []
 
     if verbose:
