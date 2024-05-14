@@ -17,7 +17,7 @@ conda create -n cap python==3.8
 conda activate cap
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 conda install jupyter
-pip install transformers[torch]
+pip install -r requirements.txt
 ```
 
 ## Results
@@ -64,7 +64,7 @@ The OCR models marked with an **dagger**$^\dagger$ were tested using models impl
 ## Checkpoint
 
 ### Pre-train with generated dataset (FINE)
-| Type      | weight                                                                                             | Size     |
-|-----------|----------------------------------------------------------------------------------------------------|----------|
-| LSTM-FINE | [Google Drive](https://drive.google.com/file/d/1IbgX0RjBreElrJBir3It_PsJxrBaVVXC/view?usp=sharing) | 128.8 MB |
-| BERT-FINE | [Google Drive](https://drive.google.com/file/d/1beu9bkcLji_5eCMNYoRNaM_xuEHo-o00/view?usp=sharing) | 413.3 MB |
+| Type      | weight                                                                                             | logs              | Size     |
+|-----------|----------------------------------------------------------------------------------------------------|-------------------|----------|
+| LSTM-FINE | [Google Drive](https://drive.google.com/file/d/1IbgX0RjBreElrJBir3It_PsJxrBaVVXC/view?usp=sharing) | [logs]("./logs/logs-cap-lstm-fine.txt") | 128.8 MB |
+| BERT-FINE | [Google Drive](https://drive.google.com/file/d/1beu9bkcLji_5eCMNYoRNaM_xuEHo-o00/view?usp=sharing) | logs              | 413.3 MB |
