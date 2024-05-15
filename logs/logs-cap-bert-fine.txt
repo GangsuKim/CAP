@@ -1,0 +1,68 @@
+Training Epoch 1: 100%|█████████████████████████████████████| 1055/1055 [13:00<00:00,  1.35it/s, avg_train_loss=0.0657]
+
+
+Average training loss for epoch 1: 0.06571675310522689
+
+Validation Epoch 1: 100%|████████████████████| 118/118 [00:34<00:00,  3.44it/s, avg_val_loss=0.0373, val_accuracy=5.25]
+
+
+Average validation loss for epoch 1: 0.037313683486298925
+Validation accuracy for epoch 1: 0.9904666666666667
+Model saved: epoch 1, val_loss 0.0373
+
+Training Epoch 2: 100%|█████████████████████████████████████| 1055/1055 [14:03<00:00,  1.25it/s, avg_train_loss=0.0331]
+
+
+Average training loss for epoch 2: 0.0330808277758858
+
+Validation Epoch 2: 100%|████████████████████| 118/118 [00:34<00:00,  3.41it/s, avg_val_loss=0.0384, val_accuracy=5.24]
+
+
+Average validation loss for epoch 2: 0.038385010069883346
+Validation accuracy for epoch 2: 0.9897333333333334
+
+Training Epoch 3: 100%|█████████████████████████████████████| 1055/1055 [14:07<00:00,  1.24it/s, avg_train_loss=0.0338]
+
+
+Average training loss for epoch 3: 0.03380833268383522
+
+Validation Epoch 3: 100%|████████████████████| 118/118 [00:34<00:00,  3.39it/s, avg_val_loss=0.0377, val_accuracy=5.24]
+
+
+Average validation loss for epoch 3: 0.0377316242656118
+Validation accuracy for epoch 3: 0.9898
+
+Training Epoch 4: 100%|█████████████████████████████████████| 1055/1055 [13:57<00:00,  1.26it/s, avg_train_loss=0.0312]
+
+
+Average training loss for epoch 4: 0.03120074746534405
+
+Validation Epoch 4: 100%|████████████████████| 118/118 [00:35<00:00,  3.35it/s, avg_val_loss=0.0409, val_accuracy=5.24]
+
+
+Average validation loss for epoch 4: 0.040879410146972384
+Validation accuracy for epoch 4: 0.9894666666666667
+
+Training Epoch 5: 100%|█████████████████████████████████████| 1055/1055 [12:39<00:00,  1.39it/s, avg_train_loss=0.0321]
+
+
+Average training loss for epoch 5: 0.0321186698790004
+
+Validation Epoch 5: 100%|████████████████████| 118/118 [00:30<00:00,  3.81it/s, avg_val_loss=0.0345, val_accuracy=5.25]
+
+
+Average validation loss for epoch 5: 0.03446624250648449
+Validation accuracy for epoch 5: 0.991
+Model saved: epoch 5, val_loss 0.0345
+
+Training Epoch 6: 100%|█████████████████████████████████████| 1055/1055 [12:33<00:00,  1.40it/s, avg_train_loss=0.0504]
+
+
+Average training loss for epoch 6: 0.05042982505694014
+
+Validation Epoch 6: 100%|████████████████████| 118/118 [00:30<00:00,  3.82it/s, avg_val_loss=0.0428, val_accuracy=5.24]
+
+
+Average validation loss for epoch 6: 0.042805673625572756
+Validation accuracy for epoch 6: 0.99
+Training and validation complete!
