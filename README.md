@@ -58,7 +58,7 @@ pip install -r requirements.txt
 | **Average**                                                                                                            | **+0.07** | **+6.34** | **+2.76** | **+4.54** | **+3.17** |
 
 *Metirc : World-based Exactly Matching (WEM) score  
-The OCR models marked with an **dagger**$^\dagger$ were tested using models implemented using the [MMOCR library](https://github.com/open-mmlab/mmocr).
+The OCR models marked with **dagger**$^\dagger$ were tested using models implemented using the [MMOCR library](https://github.com/open-mmlab/mmocr).
 
 
 ## Checkpoint
@@ -67,4 +67,4 @@ The OCR models marked with an **dagger**$^\dagger$ were tested using models impl
 | Type      | weight                                                                                             | logs                                 | # params | Size     |
 |-----------|----------------------------------------------------------------------------------------------------|--------------------------------------|--------|----------|
 | LSTM-FINE | [Google Drive](https://drive.google.com/file/d/1IbgX0RjBreElrJBir3It_PsJxrBaVVXC/view?usp=sharing) | [logs](/logs/logs-cap-lstm-fine.txt) | 33.7M  | 128.8 MB |
-| BERT-FINE | [Google Drive](https://drive.google.com/file/d/1beu9bkcLji_5eCMNYoRNaM_xuEHo-o00/view?usp=sharing) | logs                                 | 108.3M | 413.3 MB |
+| BERT-FINE | [Google Drive](https://drive.google.com/file/d/1beu9bkcLji_5eCMNYoRNaM_xuEHo-o00/view?usp=sharing) | [logs](/logs/logs-cap-bert-fine.txt) | 108.3M | 413.3 MB |
