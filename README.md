@@ -68,3 +68,12 @@ The OCR models marked with **dagger**$^\dagger$ were tested using models impleme
 |-----------|----------------------------------------------------------------------------------------------------|--------------------------------------|--------|----------|
 | LSTM-FINE | [Google Drive](https://drive.google.com/file/d/1IbgX0RjBreElrJBir3It_PsJxrBaVVXC/view?usp=sharing) | [logs](/logs/logs-cap-lstm-fine.txt) | 33.7M  | 128.8 MB |
 | BERT-FINE | [Google Drive](https://drive.google.com/file/d/1beu9bkcLji_5eCMNYoRNaM_xuEHo-o00/view?usp=sharing) | [logs](/logs/logs-cap-bert-fine.txt) | 108.3M | 413.3 MB |
+
+## Dataset
+
+### Generate data
+ - train : [Google Drive](https://drive.google.com/file/d/1qkWrw1Au5lqRUx8crFDirloGkQDGE2Ay/view?usp=sharing) (259.8 MB)
+ - test : [Google Drive](https://drive.google.com/file/d/1TRX7go8yEF2jHTwO3CCTxZHjINYMrQwr/view?usp=sharing) (80.4 MB)
+
+### Real-world data
+ - test : [Google Drive](https://drive.google.com/file/d/1vmuwvu_ld0FpwDMKTUhZKi3XztrdB9fw/view?usp=sharing) (5.4 MB)
