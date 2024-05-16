@@ -3,6 +3,7 @@
 # https://github.com/VamosC/CLIP4STR
 
 import os.path as osp
+import os
 import argparse
 
 import torch
