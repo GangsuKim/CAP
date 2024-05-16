@@ -1,3 +1,5 @@
+# This code required CLIP4STR installation
+# Please follow instruction below
 # https://github.com/VamosC/CLIP4STR
 
 import os.path as osp
@@ -67,11 +69,11 @@ def main():
     img_transform = SceneTextDataModule.get_transform(model.hparams.img_size)
 
     # [CAP] Load character distribution
-    normal_prior = np.load('../distributions/CAPv2_NORMAL_PRIOR.npy')
-    hash_prior = np.load('./CAP/priors/CAPv2_HASH_PRIOR.npy')
-    ipv4_prior = np.load('./CAP/priors/CAPv2_IPv4_PRIOR.npy')
-    ipv6_prior = np.load('./CAP/priors/CAPv2_IPv6_PRIOR.npy')
-    mac_prior = np.load('./CAP/priors/CAPv2_MAC_PRIOR.npy')
+    normal_prior = np.load('../data/distributions/NORMAL_distribution.npy')
+    hash_prior = np.load('../data/distributions/HASH_distribution.npy')
+    ipv4_prior = np.load('../data/distributions/IPv4_distribution.npy')
+    ipv6_prior = np.load('../data/distributions/IPv6_distribution.npy')
+    mac_prior = np.load('../data/distributions/MAC_distribution.npy')
 
     files = sorted([x for x in os.listdir(args.images_path) if x.endswith('png') or x.endswith('jpeg') or x.endswith('jpg')])
 
@@ -85,10 +87,10 @@ def main():
         pred, p = model.tokenizer.decode(p)
 
         if args.CAP:
-            logit = CAP_model(word2tensor.convert(pred[0]))
+            logit = CAP_model(word2tensor.convert(pred[0]))  # Calculate probability of text domain
             logit_softmax = logit.softmax(dim=1)
             posterior = torch.matmul(logit_softmax, torch.Tensor(np.vstack([normal_prior, hash_prior, ipv4_prior, ipv6_prior, mac_prior])).to(args.device))
-            p[:, :, 1:] *= (1 + SwapVocab2D(posterior, './CAP/VOCAB_CLIP4STR.npy')[:, 1:-2].unsqueeze(1).to(args.device))
+            p[:, :, 1:] *= (1 + SwapVocab2D(posterior, '../data/vocabs/VOCAB_CLIP4STR.npy')[:, 1:-2].unsqueeze(1).to(args.device))  # Update priors
             pred_cap, confidences = model.tokenizer.decode(p)
 
             print(f'{fname}: {pred[0]}, {pred_cap[0]}')
