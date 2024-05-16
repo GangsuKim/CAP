@@ -74,6 +74,3 @@ The OCR models marked with **dagger**$^\dagger$ were tested using models impleme
 ### Generate data
  - train : [Google Drive](https://drive.google.com/file/d/1qkWrw1Au5lqRUx8crFDirloGkQDGE2Ay/view?usp=sharing) (259.8 MB)
  - test : [Google Drive](https://drive.google.com/file/d/1TRX7go8yEF2jHTwO3CCTxZHjINYMrQwr/view?usp=sharing) (80.4 MB)
-
-### Real-world data
- - test : [Google Drive](https://drive.google.com/file/d/1vmuwvu_ld0FpwDMKTUhZKi3XztrdB9fw/view?usp=sharing) (5.4 MB)
